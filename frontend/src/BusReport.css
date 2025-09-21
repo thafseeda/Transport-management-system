@@ -1,0 +1,138 @@
+.busreport-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(135deg, #f8fafc 0%, #e0eafc 100%);
+  padding: 2rem 0;
+}
+
+.busreport-title {
+  font-size: 2.2rem;
+  color: #2d3a4b;
+  margin-bottom: 2rem;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  letter-spacing: 1px;
+}
+
+.busreport-form {
+  display: flex;
+  gap: 1.2rem;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.busreport-input {
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  border: 1px solid #bfc9d9;
+  font-size: 1rem;
+  background: #fff;
+  transition: border 0.2s;
+}
+.busreport-input:focus {
+  border: 1.5px solid #4e54c8;
+  outline: none;
+}
+
+.busreport-add-btn {
+  padding: 0.7rem 2rem;
+  border-radius: 25px;
+  background: linear-gradient(90deg, #4e54c8 0%, #8f94fb 100%);
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(78, 84, 200, 0.08);
+  transition: background 0.2s, transform 0.2s;
+}
+.busreport-add-btn:hover {
+  background: linear-gradient(90deg, #8f94fb 0%, #4e54c8 100%);
+  transform: translateY(-2px) scale(1.04);
+}
+
+.busreport-table {
+  width: 80%;
+  max-width: 800px;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(44, 62, 80, 0.07);
+}
+.busreport-table th, .busreport-table td {
+  padding: 1rem 1.2rem;
+  border-bottom: 1px solid #e6eaf3;
+  text-align: center;
+  font-size: 1.05rem;
+}
+.busreport-table th {
+  background: #4e54c8;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.busreport-table tr:last-child td {
+  border-bottom: none;
+}
+.busreport-table tbody tr:hover {
+  background: #f0f4ff;
+  transition: background 0.2s;
+}
+
+.busreport-back-btn {
+  margin-top: 2.5rem;
+  padding: 0.7rem 2.2rem;
+  border-radius: 25px;
+  background: linear-gradient(90deg, #4e54c8 0%, #8f94fb 100%);
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(78, 84, 200, 0.08);
+  transition: background 0.2s, transform 0.2s;
+}
+.busreport-back-btn:hover {
+  background: linear-gradient(90deg, #8f94fb 0%, #4e54c8 100%);
+  transform: translateY(-2px) scale(1.04);
+}
+
+.busreport-action-btn {
+  margin: 0 0.3rem;
+  padding: 0.5rem 1.1rem;
+  border-radius: 20px;
+  border: none;
+  font-weight: 600;
+  font-size: 0.98rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+  box-shadow: 0 1px 4px rgba(44, 62, 80, 0.07);
+}
+.busreport-action-btn.update {
+  background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
+  color: #fff;
+}
+.busreport-action-btn.update:hover {
+  background: linear-gradient(90deg, #185a9d 0%, #43cea2 100%);
+  transform: translateY(-1px) scale(1.04);
+}
+.busreport-action-btn.delete {
+  background: linear-gradient(90deg, #ff5858 0%, #f09819 100%);
+  color: #fff;
+}
+.busreport-action-btn.delete:hover {
+  background: linear-gradient(90deg, #f09819 0%, #ff5858 100%);
+  transform: translateY(-1px) scale(1.04);
+}
+.busreport-action-btn.cancel {
+  background: #bfc9d9;
+  color: #2d3a4b;
+}
+.busreport-action-btn.cancel:hover {
+  background: #e0eafc;
+  color: #2d3a4b;
+  transform: translateY(-1px) scale(1.04);
+} 
